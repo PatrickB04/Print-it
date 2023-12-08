@@ -70,14 +70,14 @@ function updateSlide() {
 
 function ajouterPoints() {
 	// Sélection de l'élément contenant les points
-	let dotsContainer = document.querySelector("#banner .dots");
+	var dotsContainer = document.querySelector("#banner .dots");
   
 	// Test si l'élément existe
 	if (dotsContainer) {
 	  // Création des points en fonction du nombre de diapositives
-	  for (let i = 0; i < slides.length; i++) {
+	  for (var i = 0; i < slides.length; i++) {
 		// Création d'un élément div
-		let dot = document.createElement("div");
+		var dot = document.createElement("div");
   
 		// Ajout de la classe "dot" à l'élément div
 		dot.classList.add("dot");
@@ -91,7 +91,7 @@ function ajouterPoints() {
 	}
   
 function updateDots() {
-    let dots = document.querySelectorAll("#banner .dots .dot");
+    var dots = document.querySelectorAll("#banner .dots .dot");
   
     dots.forEach(function (dot, index) {
       if (index === currentIndex) {
@@ -101,3 +101,14 @@ function updateDots() {
       }
     });
   }
+
+
+// Essai de transition automatique entre les photos 
+function startAutoScroll() {
+	intervalId = setInterval(function () {
+	  changeSlide(1); // Passer à la diapositive suivante
+	}, 4000); // Temporisation de 2 secondes
+  }
+
+startAutoScroll()
+// Essai de transition automatique entre les photos 
