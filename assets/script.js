@@ -36,10 +36,8 @@ document.addEventListener('DOMContentLoaded', function() {
 	updateSlide(); // Appel initial pour mettre à jour l'image et le texte lors du chargement de la page
   });
 
-
-function changeSlide(direction) {
+  function changeSlide(direction) {
 	currentIndex += direction;
-  
 	// Vérifier si currentIndex dépasse la dernière diapositive
 	if (currentIndex >= slides.length) {
 	  currentIndex = 0;
