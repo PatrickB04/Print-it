@@ -107,7 +107,7 @@ function updateDots() {
 function startAutoScroll() {
 	intervalId = setInterval(function () {
 	  changeSlide(1); // Passer à la diapositive suivante
-	}, 4000); // Temporisation de 2 secondes
+	}, 4000); // Temporisation en millisecondes
   }
 
 startAutoScroll()

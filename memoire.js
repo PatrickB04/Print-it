@@ -63,3 +63,12 @@ function ttc(ht) {
 
 var prixTtc = ttc(100)
 console.log(prixTtc)
+
+// Un OBJET a des propriétés et des méthodes
+// Exemple l'objet VOITURE a des caractéristiques (couleur, puissance, ...) : propriétés/attributs
+//                         et des actions (accélerer, freiner,...) : méthodes
+// Syntaxe propriété : Objet.propriete
+// Syntaxe méthode : objet.méthode()
+
+// Une CLASS, s'écrit comme une fonction : function Class(arg1, arg2) mais avec majuscule en début de mot pour distinction avec function
+// Pour faire une nouvelle instnace de class :  var nouvelleClass = new Class(arg1, arg2)
